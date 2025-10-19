@@ -12,7 +12,7 @@ console.log(compareNumbers("123", "321")); // true
 
 function compareNumbers1(str1, str2) {
     return str1[0] === str2[0];
-   
+
 }
 
 console.log(compareNumbers1("123", "145")); // true
@@ -23,7 +23,7 @@ console.log(compareNumbers1("123", "321")); // false
 
 function compareLengthString(str1, str2) {
     return str1.length === str2.length;
-    
+
 }
 
 console.log(compareNumbers1("123", "145")); // true
@@ -36,8 +36,8 @@ function returnBoolean(num) {
     return num.length % 2 === 0;
 }
 
-console.log(returnBoolean("145")); 
-console.log(returnBoolean("3214")); 
+console.log(returnBoolean("145"));
+console.log(returnBoolean("3214"));
 
 // Task-5
 // Write a function that takes two parameters num1 and num2. The function should return the boolean value true if num1 is greater than num2. Otherwise, the function should return the boolean value false.
@@ -46,6 +46,25 @@ function greaterNumber(num1, num2) {
     return num1 > num2;
 }
 
-console.log(greaterNumber(14, 5)); 
-console.log(greaterNumber(8, 26)); 
+console.log(greaterNumber(14, 5));
+console.log(greaterNumber(8, 26));
+
+// Task - 6
+// Write a function that takes two parameters num1 and num2.The function should return a boolean value of true if num1 is divisible by num2 without a remainder.Otherwise, the function should return a boolean value of false.
+
+function divisibleNumber(num1, num2) {
+    return num1 % num2 === 0;
+}
+console.log(divisibleNumber(25, 5));
+console.log(divisibleNumber(8, 26));
+
+// Task-7
+// Write a function that accepts a number num. The function should return a boolean value of true if num is an odd number. Otherwise, the function should return a boolean value of false.
+
+function findOddNumber(num) {
+    return num % 2 !== 0;
+}
+
+console.log(findOddNumber(6));
+console.log(findOddNumber(5));
 

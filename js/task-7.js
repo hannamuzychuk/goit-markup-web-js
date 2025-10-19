@@ -45,7 +45,7 @@ console.log(
 ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
 
 
-const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName))
+const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName));
 
 const allUsers = [
   {
@@ -185,9 +185,9 @@ console.log(
 //   }
 // ]
 
-const getTotalBalanceByGender = (users, gender) => users 
-    .filter(user => user.gender === gender)
-    .reduce((total, user) => total + user.balance, 0)
+const getTotalBalanceByGender = (users, gender) => users
+  .filter(user => user.gender === gender)
+  .reduce((total, user) => total + user.balance, 0);
 
 
 
